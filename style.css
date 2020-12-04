@@ -1,0 +1,24 @@
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h3
+{
+	padding-left: 1vw;
+}
+
+section
+{
+	padding-left: 1vw;
+
+	display: grid;
+	grid-template-rows: 1fr 4fr 1fr;
+	grid-template-areas: 'header' 'main' 'footer';
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+}

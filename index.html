@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sete Cliques para as Estrelas</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='style.css'/>
+	</head>
+	<body>
+		<h1>Sete Cliques para as Estrelas</h1>
+		<h3>Escreva o nome dos verbetes corretamente (culpa da Wikipedia).</h3>
+		<section id="site">
+			<header id="formulario">
+				<div class="row">
+					<div>
+						<input type="text" id="from" name="from" placeholder="De onde?"></input>
+					</div>
+					<div>
+						<input type="text" id="to" name="to" placeholder="Para onde?"></input>
+					</div>
+				</div>
+				<button id="trace_path" onClick="tracePath();">Me mostre o caminho!</button>
+			</header>
+			<main id="content">
+				<div id="path">
+				</div>
+			</main>
+			<footer>
+				<h5>Feito com ❤️ por xTecna, mostrando o algoritmo de Busca em Largura com uma técnica conhecida como Meet in the Middle.</h5>
+				<span>
+					<i class="fa fa-github" aria-hidden="true"></i> 
+					<a href="https://github.com/xTecna/sete-cliques" target="_blank">Código fonte no GitHub</a> (JavaScript puro)
+				</span>
+				<span>
+					<i class="fa fa-github" aria-hidden="true"></i> 
+					<a href="https://github.com/xTecna" target="_blank">GitHub</a> 
+					<i class="fa fa-twitch" aria-hidden="true"></i> 
+					<a href="https://www.twitch.tv/xtecna" target="_blank">Twitch</a> 
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+					<a href="https://twitter.com/WNXTecna" target="_blank">Twitter</a>
+				</span>
+			</footer>
+		</section>
+		<script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
