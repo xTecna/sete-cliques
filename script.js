@@ -217,7 +217,7 @@ async function tracePath(){
 						two_way_path[two_way_path.length - 1] = `<strong>${two_way_path[two_way_path.length - 1]}</strong>`;
 						path.innerHTML = `${two_way_path.join(' > ')} com ${two_way_path.length - 1} cliques!`;
 						return;
-					}else if (!isMetaArticle(next_title) && !isADate(next_title) && full_path.length < 5){
+					}else if (!(next_title in list) && !isMetaArticle(next_title) && !isADate(next_title) && full_path.length < 5){
 						const nextObject = {title: next_title, full_path: (direction === 0) ? [...full_path, next_title] : [next_title, ...full_path], direction: direction};
 						list[next_title] = nextObject;
 						links.push(nextObject);
