@@ -217,7 +217,7 @@ async function tracePath(){
 						two_way_path[two_way_path.length - 1] = `<strong>${two_way_path[two_way_path.length - 1]}</strong>`;
 						path.innerHTML = `${two_way_path.join(' > ')} com ${two_way_path.length - 1} cliques!`;
 						return;
-					}else if (!isMetaArticle(next_title) && !isADate(next_title)){
+					}else if (!isMetaArticle(next_title) && !isADate(next_title) && full_path.length < 5){
 						const nextObject = {title: next_title, full_path: (direction === 0) ? [...full_path, next_title] : [next_title, ...full_path], direction: direction};
 						list[next_title] = nextObject;
 						links.push(nextObject);
@@ -225,7 +225,7 @@ async function tracePath(){
 				}
 			}
 		}
-		path.innerHTML = 'Não foi possível achar o caminho. :(';
+		path.innerHTML = 'Não foi possível achar um caminho com menos de 7 cliques de um artigo ao outro. :(';
 	}else{
 		path.innerHTML = 'Um dos artigos passados não é válido.';
 	}
