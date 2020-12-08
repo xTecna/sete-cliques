@@ -7,7 +7,7 @@
   Escreva de onde você quer partir e pra onde você quer chegar e aguarde para ver que conexões estranhas podem ser feitas.
 </p>
 
-<h3>Exemplos:<h3>
+<h3>Exemplos:</h3>
 <ul>
   <li><strong>Apollo 9</strong> (missão espacial) > Chicago (cidade onde nasceu o comandante da missão) > Cachorro-quente (iguaria famosa em Chicago) > <strong>Requeijão</strong> (o que costumam colocar no cachorro-quente)</li>
   <li><strong>Dioniso</strong> (deus grego) > Esculápio (outro deus grego) > Aachen (cidade que tem uma estátua de Esculápio) > <strong>Anilina</strong> (um dos materiais mais produzidos em Aachen)</li>
